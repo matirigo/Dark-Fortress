@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 
-public class pjmoves : MonoBehaviour
+public class PJSCRIPT : MonoBehaviour
 {
     private Rigidbody2D rb2D;
 
@@ -118,12 +117,12 @@ public class pjmoves : MonoBehaviour
 
         if (move > 0 && !rightlook)
         {
-            rotation();
+            Rotation();
             //lookrotation
         }
         else if (move < 0 && rightlook)
         {
-            rotation();
+            Rotation();
             //lookrotation
         }
 
@@ -153,7 +152,7 @@ public class pjmoves : MonoBehaviour
             jumpingwall = false;
         }
         
-    private void rotation()
+    private void Rotation()
     {
             rightlook = !rightlook;
 
