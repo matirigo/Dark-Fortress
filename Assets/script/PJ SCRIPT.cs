@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
+
 public class pjmoves : MonoBehaviour
 {
     private Rigidbody2D rb2D;
@@ -181,10 +182,7 @@ public class pjmoves : MonoBehaviour
         canmove= true;
         rb2D.gravityScale = initialgravity;
 
-        
-
-        
-
     }
 
-}
+
+    }

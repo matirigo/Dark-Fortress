@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class spikes : MonoBehaviour
+public class endGame : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -20,11 +20,13 @@ public class spikes : MonoBehaviour
     {
         if (other.collider.CompareTag("player")) ;
         {
-            Destroy(other.gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Application.Quit();
 
         }
-        
+
+
 
     }
+
+
 }
